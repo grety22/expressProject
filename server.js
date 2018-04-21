@@ -7,7 +7,7 @@ var path = require("path");
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = process.env.port || 3000;
+var PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -74,7 +74,7 @@ app.get("/", function(req, res) {
 app.get("/view", function(req, res) {
   res.sendFile(path.join(__dirname, "view.html"));
 });
-app.get("/make", function(req, res) {
+app.get("/form", function(req, res) {
   res.sendFile(path.join(__dirname, "form.html"));
 });
 
