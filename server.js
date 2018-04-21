@@ -28,23 +28,37 @@ var customers = [
 ];
 var reservations = [
 {
-"customerName": "test",
-"phoneNumber": "3333333333",
-"customerEmail": "test@test.com",
+"customerName": "Gretel",
+"phoneNumber": "444-forget-it",
+"customerEmail": "wouldn't you like to know",
 "customerDestination": "Europe",
 "customerID": "1"
 },
 {
-"customerName": "1",
-"phoneNumber": "2",
-"customerEmail": "3",
+"customerName": "Martha",
+"phoneNumber": "444-forget-it",
+"customerEmail": "wouldn't you like to know",
 "customerDestination": "Alaska",
 "customerID": "4"
 },
 {
-"customerName": "test",
-"phoneNumber": "8888888888",
-"customerEmail": "test@test.com",
+"customerName": "Adrian",
+"phoneNumber": "444-forget-it",
+"customerEmail": "wouldn't you like to know",
+"customerDestination": "Caribbean",
+"customerID": "2"
+},
+{
+"customerName": "ZhAYinG",
+"phoneNumber": "444-forget-it",
+"customerEmail": "wouldn't you like to know",
+"customerDestination": "Caribbean",
+"customerID": "2"
+},
+{
+"customerName": "Rus",
+"phoneNumber": "444-forget-it",
+"customerEmail": "wouldn't you like to know",
 "customerDestination": "Caribbean",
 "customerID": "2"
 }
