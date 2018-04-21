@@ -96,9 +96,9 @@
     
             $.post(currentURL + "/api/destinations", newReservation,
             function(data){
-    
+                console.log(data);
                 // If a trip is available... tell user they are booked.
-                if(data == true){
+                if(data){
                     swal({
  title: "Pack Your Bags!",
  text: "You have been booked!",
@@ -108,7 +108,7 @@
                 }
     
                 // If a trip is not available... tell user they on the waiting list.
-                if(data == false){
+                if(!data){
                     swal({
  title: "Welcome to Our Waitlist!",
  text: "There's no open spaces. You have been added to our wait list!",
