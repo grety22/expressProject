@@ -92,8 +92,8 @@ app.get("/api/reservations", function(req, res) {
 app.get("/api/destinations", function(req, res) {
   return res.json(reservations);
 });
-app.get("/api/waitingList", function(req, res) {
-  return res.json(rooms);
+app.get("/api/waitlist", function(req, res) {
+  return res.json(waitingList);
 });
 
 // Displays a single character, or returns false
