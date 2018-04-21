@@ -72,7 +72,7 @@ app.get("/", function(req, res) {
 });
 
 app.get("/view", function(req, res) {
-  res.sendFile(path.join(__dirname, "view.html"));
+  res.sendFile(path.join(__dirname, "destinations.html"));
 });
 app.get("/form", function(req, res) {
   res.sendFile(path.join(__dirname, "form.html"));
@@ -80,6 +80,9 @@ app.get("/form", function(req, res) {
 
 // Displays all characters
 app.get("/api/reservations", function(req, res) {
+  return res.json(reservations);
+});
+app.get("/api/destinations", function(req, res) {
   return res.json(reservations);
 });
 app.get("/api/waitingList", function(req, res) {
