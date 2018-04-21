@@ -31,18 +31,21 @@ var reservations = [
 "customerName": "test",
 "phoneNumber": "3333333333",
 "customerEmail": "test@test.com",
+"destination": "Europe",
 "customerID": "1"
 },
 {
 "customerName": "1",
 "phoneNumber": "2",
 "customerEmail": "3",
+"destination": "Alaska",
 "customerID": "4"
 },
 {
 "customerName": "test",
 "phoneNumber": "8888888888",
 "customerEmail": "test@test.com",
+"destination": "Caribbean",
 "customerID": "2"
 }
 ];
