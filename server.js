@@ -75,7 +75,7 @@ app.get("/view", function(req, res) {
   res.sendFile(path.join(__dirname, "view.html"));
 });
 app.get("/make", function(req, res) {
-  res.sendFile(path.join(__dirname, "make.html"));
+  res.sendFile(path.join(__dirname, "form.html"));
 });
 
 // Displays all characters
