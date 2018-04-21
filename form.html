@@ -15,7 +15,7 @@
             <hr class="my-4">
             <p></p>
             <p class="lead">
-              <a class="btn btn-primary btn-lg" href="destinations.html" role="button">Destinations</a>
+              <a class="btn btn-primary btn-lg" href="/view" role="button">Destinations</a>
               <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
             </p>
         </div>
@@ -75,7 +75,11 @@
 
     
         $(".submit").on("click", function(){
-    
+         
+
+
+
+
             
             var newReservation = {
                 customerName: $('#name').val().trim(),
@@ -95,12 +99,22 @@
     
                 // If a trip is available... tell user they are booked.
                 if(data == true){
-                    alert("Yay! You are officially booked!")
+                    swal({
+ title: "Pack Your Bags!",
+ text: "You have been booked!",
+ icon: "success",
+ button: "YES!!!",
+});
                 }
     
                 // If a trip is not available... tell user they on the waiting list.
                 if(data == false){
-                    alert("Sorry you are on the wait list")
+                    swal({
+ title: "Welcome to Our Waitlist!",
+ text: "There's no open spaces. You have been added to our wait list!",
+ icon: "warning",
+ button: "AH OK!",
+});
                 }
     
                 // Clear the form when submitting
