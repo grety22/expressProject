@@ -74,7 +74,7 @@ app.get("/", function(req, res) {
 app.get("/view", function(req, res) {
   res.sendFile(path.join(__dirname, "view.html"));
 });
-app.get("/make", function(req, res) {
+app.get("/form", function(req, res) {
   res.sendFile(path.join(__dirname, "form.html"));
 });
 
