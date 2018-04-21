@@ -29,27 +29,31 @@
                             <form role="form">
 
                                 <div class="form-group">
-                                    <label for="">Name</label>
+                                    <label for="name">Name</label>
                                     <input type="text" class="form-control" id="name">
                                 </div>
     
                                 <div class="form-group">
-                                    <label for="">Phone Number</label>
+                                    <label for="phone">Phone Number</label>
                                     <input type="text" class="form-control" id="phone">
                                 </div>
     
                                 <div class="form-group">
-                                    <label for="">Email</label>
+                                    <label for="email">Email</label>
                                     <input type="text" class="form-control" id="email">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="">Destination</label>
-                                    <input type="text" class="form-control" id="destination">
+                                    <label for="destination">Destination</label>
+                                    <select class="form-control" id="destination">
+                                    <option>Europe</option>
+                                    <option>Caribbean</option>
+                                    <option>Alaska</option>
+                                    </select>
                                 </div>
     
                                 <div class="form-group">
-                                    <label for="">Unique ID</label>
+                                    <label for="id">Unique ID</label>
                                     <input type="text" class="form-control" id="uniqueID">
                                 </div>
                                 <button type="submit" class="btn btn-primary submit">Submit</button>
@@ -86,7 +90,7 @@
            
             var currentURL = window.location.origin;
     
-            $.post(currentURL + "/api/destination", newReservation,
+            $.post(currentURL + "/api/destinations", newReservation,
             function(data){
     
                 // If a table is available... tell user they are booked.
